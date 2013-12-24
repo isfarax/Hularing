@@ -1,0 +1,276 @@
+/**
+--------------------------------------------
+	GLOBALS
+--------------------------------------------
+**/
+
+
+
+html, body {height: 100%;}
+body {margin:0; padding:0; border:0; outline:0;background-color:#000;font-family: Sans-Serif; color:#fff;}
+/**
+--------------------------------------------
+	SKELETON
+--------------------------------------------
+**/
+
+
+#hula{width: 100%; height:auto !important; min-height:100%;}
+#logo{margin-bottom: 20px;font-size: 3em;}
+#screen{ width: auto; max-width:720px; margin:auto; height:auto; padding:0px;}
+#navigation{background-color:#111; width: 100%; height:50px; position:fixed; bottom:0; text-align:center; z-index:100;}
+#clear {height: 65px; width: 100%;}
+#sounds{display:none;}
+
+
+/**
+--------------------------------------------
+	HEADERS
+--------------------------------------------
+**/
+.t34{font-size: 24px; }
+
+
+
+/**
+--------------------------------------------
+	LOGIN
+--------------------------------------------
+**/
+
+.login_{background-color:#000; color:#fff;}
+#login_screen{ width:auto; height:auto; padding:15px; margin-left:auto;margin-right:auto;}
+#login_header{font-size:24px;}
+#login_error{padding-top:10px; color:pink;}
+#login_tools{margin-top:20px;}
+#login_tools .login_text{font-size:12px; padding-bottom:3px;}
+#login_tools .login_input_h{margin-bottom:10px; background-color:#fff; width:200px; height:auto;}
+
+#login_tools .login_input_h #hulaID_input{ background-color:#fff; border:0; outline:none; padding:8px; margin:0;}
+#login_tools .login_input_h #password_input{ background-color:#fff; border:0; outline:none; padding:8px; margin:0;}
+#login_button_input{background-color:#fff; border:0; outline:none; padding:8px; margin:0; font-size:14px; cursor:pointer;}
+#login_button_input:hover{background-color:red; color:#fff; }
+
+#conn_status{padding:12px; font-size:24px; }
+#loading{display:inline-block; vertical-align:middle;}
+
+
+/**
+--------------------------------------------
+	NAVIGATION
+--------------------------------------------
+**/
+.nav_item{display:inline-block; vertical-align:top; background-color:grefen; height:40px; width:25%; max-width:70px; margin:0;padding:10px 0 10px 0;color:#fff; overflow:hidden; cursor:pointer;}
+.nav_item:hover{background-color:#222;}
+#navigation .nav_item_s{background-color:#fff !important; color:#000 !important;}
+.nav_item .nav_icon{ background-image:url('../../farax/img/nav.png');display:inline-block; vertical-align:middle;width:30px; height:30px; padding:0;}
+
+.nav_item #home_icon{background-position:0px 0px}
+.nav_item_s #home_icon{background-position:0px -30px !important;}
+
+.nav_item #people_icon{background-position:0px -60px}
+.nav_item_s #people_icon{background-position:0px -90px !important;}
+
+.nav_item #messages_icon{background-position:0px -120px}
+.nav_item_s #messages_icon{background-position:0px -150px !important;}
+
+.nav_item #stuff_icon{background-position:0px -180px}
+.nav_item_s #stuff_icon{background-position:0px -210px !important;}
+
+
+.nav_item .nav_count{display:inline-block; vertical-align:middle; color:#fff; margin-left:3px; font-size:12px; background-color:red; padding:2px; color:#fff; text-align:center;}
+
+
+/* people */
+#people_header{ min-height:50px;}
+#people_header .title{padding:10px 0 0 20px;}
+#people_list{width:100%; height:auto; padding:0; margin:0; }
+.friend_holder{ height:60px; width:auto; padding:10px; overflow:hidden; }
+.friend_holder:hover{ background-color:#111; cursor:pointer;}
+.friend_img_h{width:50px; height:50px; display:inline-block; vertical-align:middle; margin-top:5px; margin-left:10px; overflow:hidden; text-align:center;}
+.friend_img_h img{max-width:50px;}
+.friend_info_h{width:auto; max-width:580px; height:50px; display:inline-block; vertical-align:middle; margin-top:5px; margin-left:10px;margin-right:70px; overflow:hidden; position:absolute; }
+.friend_option_h{width:50px; height:50px; float:right; margin-top:5px; margin-right:10px; font-size: 20px; z-index:10;}
+.friend_option_h .msg_person_icon{background-image: url('../../farax/img/nav.png');display: inline-block;vertical-align: middle;width: 30px;height: 30px;padding: 0; margin-left: 10px;margin-top: 10px;background-position: 0px -120px;}
+.friend_name{font-size:16px;  margin-top:0px; color:#E8E8E8; height:20px; overflow:hidden;}
+.friend_line2{font-size:12px; height:auto; overflow:hidden; font-weight:bold; margin-top:2px; color:#999;}
+.friend_notif_time{font-size:10px; font-weight:bold; margin-top:9px; color:#555; width:100%; text-align:right;}
+.person_message{position:absolute; margin-top:11px; margin-left:11px; font-size: 26px;}
+.friend_holder:hover .friend_name{ color:#fff;} 
+.pending_out{background-color:#3366FF; color:#fff; padding: 2px; font-size: 11px;} 
+.pending_in{background-color:#FF6600; color:#fff; 2px; font-size: 11px;} 
+
+#people_add_h{height: 50px;width: 50px;float: right;background-color: #333; }
+
+#people_add_option{height: 45px;width: auto; background-color: #fff;}
+#people_add_input_h{background-color: #fff; width:90%; display: inline-block; vertical-align: middle;}
+#add_person_input{width: 100%;height: auto;max-height: 100px;font-size: 13px;border: none;padding: 12px;color: #000;vertical-align: middle;outline: none;margin: 0;resize: none;font-family: Arial; vertical-align:vertical;background-color: white; }
+input[type="text"], textarea {    background-color : #fff; }
+#add_person_button{background-color: white;  display: inline-block; text-align:center; width:25%; vertical-align: middle;float: right;}
+#add_person_button div{background-color:green; color:#fff;  height: 35px;padding: 10px 20px 0 20px; float:right;}
+
+ /* person */
+#person_header{background-color:none;  height:auto; width:auto;  padding:15px; color:#fff;}
+#person_name_jid_h{width:auto; display: inline-block;}
+#person_name_jid_h #person_name{font-size:24px;}
+#person_name_jid_h #person_jid{font-size:12px; width:auto; height:15px; overflow:hidden;}
+
+#person_options {float:right; width:100px; height:50px; margin-top:5px; }
+.person_options_h{height: 30px; width: 40px;float: left; padding: 10px 0 10px 10px; cursor:pointer;}
+.person_options_h:hover{background-color:#222;}
+.person_option_item{position: absolute; margin-top: 8px;margin-left: 8px; }
+
+#person_menu_options{background-color:#fff; width:auto; color:#000; display:none; padding-bottom: 30px;}
+
+#person_pic{background-color:none; width:100%; height:auto; margin-top:20px; }
+#person_pic img{ width:100%; max-width:720px; height:auto; }
+
+#person_extra_holder{background-color:none; width:100%; height:auto;  margin-top:25px; }
+#person_tab_header{background-color:none; height:55px;}
+#person_tab_header .person_tab_item {color:#888; display:inline-block; vertical-align:top; border-bottom:solid 5px #333; padding:15px; height:20px; margin-right:7px;}
+#person_tab_header .person_tab_item:hover{cursor:pointer; background-color:#333; color:#fff;}
+#person_tab_header .person_tab_item_select{color:#fff !important; border-bottom:solid 5px #fff !important;}
+#person_tab_content{width:100%; height:auto; margin-top:30px; background-color:eed;}
+
+#person_stuff{margin-top:25px; padding: 10px;}
+#person_stuff .stuff_item{ height:auto; width:auto; margin:0 0 25px 0;}
+#person_stuff .stuff_point{background-image: url(../img/message_point.png); width:15px; height:15px; position:absolute; margin-left:0px; margin-top:13px;}
+#person_stuff .stuff_bubble{background-color:#fff; width:auto; height:auto; margin-left:15px; padding:10px; }
+#person_stuff .stuff_item_time{	width:auto;font-size:12px; color:#333; padding-bottom:5px; float:right; margin-left:7px;font-weight: bold;}
+#person_stuff .stuff_item_content{color:#222; width:auto;padding-bottom:7px; font-size:14px; }
+#person_about{font-size:14px; color:#ccc;}
+.person_options_h .nav_icon{ background-image:url('../../farax/img/nav.png');display:inline-block; vertical-align:middle;width:30px; height:30px;}
+.person_options_h  #personOptionsMenu{background-position: 0px 0px; }
+.person_options_h  #personChatMenu{background-position: 0px -120px;}
+.person_options_h_s #personOptionsMenu{background-position:0px -30px !important;}
+.person_options_h_s { background-color:#fff !important;}
+
+
+/*  PERSON MENU OPTIONS */
+
+#from_sub_h{ margin:0 15px 15px 15px; padding-top: 15px; border-bottom: solid 1px #ccc; padding-bottom: 20px;}
+#to_sub_h{margin: 0 15px 15px 15px; padding-top: 15px; border-bottom: solid 1px #ccc; padding-bottom: 20px; }
+
+.person_option_sub_icon_h{ width:40px; height:40px; background-color:blue;display: inline-block;vertical-align: top; margin-right:20px; margin-bottom: 10px; background-image: url('../../farax/img/sub.png');}
+
+.sub_ok{ background-position: 0px 0px;}
+.sub_alert{ background-position: 80px 0px;}
+.sub_warning{ background-position: 40px 0px;}
+ 
+.person_option_sub_status_h{display: inline-block; max-width:450px; color:#444;vertical-align: top; margin-right:20px; padding-bottom:20px;}
+.person_option_sub_option_h{display: inline-block; height:50px;vertical-align: top;}
+
+
+.menu_person_cancel {height: auto;padding: 10px;background-color: blue; cursor:pointer; color: #fff;font-weight: bold;}
+#person_remove_person{background-color:#FF3333; padding:10px; color:#fff; font-weight:bold; width: 150px;text-align: center;margin-left: 15px; cursor:pointer;}
+#person_remove_person:hover{background-color:red;}
+
+
+
+/* ALL MESSAGES */
+#people_messages_list{ }
+.active{display:block !important;}
+.person_message_item{display:none;}
+
+
+
+/* message item*/ 
+
+
+ /* contact message body */
+#people_messages_list .message_item{ height:auto; width:auto; padding: 15px; cursor:pointer;}
+
+#people_messages_list .message_item_details{ height:auto; color:#000;	margin:0;}
+
+#people_messages_list .message_item_picture{width:40px; height:40px; background-color:none; position:absolute; overflow:hidden;}
+#people_messages_list .message_item_picture img{width:40px; height:auto;	}
+#people_messages_list .message_point{background-image: url(../../farax/img/message_point.png); width:15px; height:15px; position:absolute; margin-left:50px; margin-top:13px;}
+#people_messages_list .message_bubble{background-color:#fff; width:auto; height:auto; margin-left:65px; padding:10px; }
+
+
+#people_messages_list .message_item_name{	width:auto;margin-left:0px; font-size:13px; font-weight:bold; color:#000; margin-bottom: 5px;}
+
+#people_messages_list .message_item_time{	width:auto;font-size:11px; color:#333; padding-bottom:5px; float:right; margin-left:7px;}
+
+#people_messages_list .message_item_body{	width:auto;padding:0px; font-size:12px; margin-top:0; color:#000;}
+
+#people_messages_list .message_item_content{width:auto;padding-bottom:7px; font-size:12px; }
+
+
+
+
+/* CONVERSATION */
+
+/* conversation */
+#screen #cperson_header{background-color:none;  height:auto; width:auto;  padding: 10px; color:#fff;}
+#screen #cperson_pic{width: 50px;height: 50px;display: inline-block;vertical-align: middle;margin-right: 15px;overflow: hidden;text-align: center; padding-bottom: 15px;}
+#screen #cperson_pic img{max-width:50px;}
+#screen #cperson_name_jid_h{width:auto; margin-top: -3px;   display:inline-block; vertical-align:top;}
+#screen #cperson_name_jid_h #cperson_name{font-size:24px;}
+#screen #cperson_name_jid_h #cperson_jid{font-size:12px; width:auto; height:15px; overflow:hidden;}
+
+#screen  #cperson_options {background-color:blue; float:right; width:50px; height:50px; margin-top:5px;}
+#screen .cperson_options_h{background-color:none; height:50px; width:50px; float:left;}
+#screen .cperson_option_item{position: absolute; margin-top: 8px;margin-left: 8px;}
+
+#convo_list{color:white; width:auto; margin-top: 25px; padding:15px;}
+#convo_list .message_item{ height:auto; width:auto; margin:0 0 20px 0; }
+#convo_list .message_item_details{ height:auto; color:#000;	margin:0;}
+#convo_list .message_item_picture{width:40px; height:40px; background-color:none; position:absolute; overflow:hidden;}
+#convo_list .message_item_picture img{width:40px; height:auto;	}
+#convo_list .message_point{background-image: url(../../farax/img/message_point.png); width:15px; height:15px; position:absolute; margin-left:50px; margin-top:13px;}
+#convo_list .message_bubble{background-color:#fff; width:auto; height:auto; margin-left:65px; padding:10px; }
+#convo_list .message_item_name{	width:auto;margin-left:0px; font-size:13px; font-weight:bold; color:#000; margin-bottom: 5px;}
+#convo_list .message_item_time{	width:auto;font-size:11px; color:#333; padding-bottom:5px; float:right; margin-left:7px;}
+#convo_list .message_item_body{	width:auto;padding:0px; font-size:12px; margin-top:0; color:#000;}
+#convo_list .message_item_content{width:auto;padding-bottom:7px; font-size:12px;}
+#convo_status{font-size: 12px;padding: 5px 5px;}
+#message_input_h{background-color:#fff; height:auto; width:auto; max-width:720px; }
+#message_input{width: 90%; height: auto; max-height:100px;font-size: 13px; border: none;padding: 10px; color: #000; vertical-align: middle; outline: none; margin:0; resize: none; font-family:Arial;}
+#hiddenDiv{display:none}
+#cperson_delete_convo {height: 50px; width: 50px; float: right; background-color:#333; display: none;}
+
+/* stuff */
+.title{padding: 10px 0 0 10px;}
+#stuff_hula{background-color:asd; width:100%; height:auto; margin-bottom:15px;} 
+#stuff_my_pic{ background-color:blue; width:20%; height:50px; margin:0; float:left;}
+#stuff_my_stuff{ width:auto; height:auto;  background-color:#fff;    }
+#mystuff_input {width: 80%; max-width:600px; height: auto; max-height:100px;font-size: 13px; border: none;padding: 10px; color: #000; vertical-align: middle; outline: none; margin:0; resize: none; font-family:Arial;}
+
+#stuff_my_stuff_options{ background-color:asd;  padding:0 15px; height:auto; text-align:right;}
+#my_stuff_hula{width:60px; height:40px; padding:7px;border:0;margin:10px 0 0 0; cursor:pointer; background-color:#fff; color:#000;}
+#stuff_holder{margin:0; padding:0;}
+#stuff_holder #stuff_list{margin:0; padding:0; color:#000;}
+
+
+
+/* stuff item*/ 
+#stuff_holder  {color:white; width:auto; margin-top: 25px; padding:15px;}
+
+ /* contact message body */
+#stuff_holder .message_item{ height:auto; width:auto; margin:0 0 20px 0;}
+
+#stuff_holder .message_item_details{ height:auto; color:#000;	margin:0;}
+
+#stuff_holder .message_item_picture{width:40px; height:40px; background-color:none; position:absolute; overflow:hidden;}
+#stuff_holder .message_item_picture img{width:40px; height:auto;	}
+#stuff_holder .message_point{background-image: url(../../farax/img/message_point.png); width:15px; height:15px; position:absolute; margin-left:50px; margin-top:13px;}
+#stuff_holder .message_bubble{background-color:#fff; width:auto; height:auto; margin-left:65px; padding:10px; }
+
+
+#stuff_holder .message_item_name{	width:auto;margin-left:0px; font-size:13px; font-weight:bold; color:#000; margin-bottom: 5px;}
+
+#stuff_holder .message_item_time{	width:auto;font-size:11px; color:#333; padding-bottom:5px; float:right; margin-left:7px;}
+
+#stuff_holder .message_item_body{	width:auto;padding:0px; font-size:12px; margin-top:0; color:#000;}
+
+#stuff_holder .message_item_content{width:auto;padding-bottom:7px; font-size:12px; }
+ 
+
+
+/*
+
+
+    --------------------------- end
+
+*/
